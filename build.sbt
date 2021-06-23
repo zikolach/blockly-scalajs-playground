@@ -15,7 +15,7 @@ lazy val blocklyPlayground =
     .jsSettings(
       Compile / fastOptJS / moduleName := name.value,
       scalaJSUseMainModuleInitializer := true,
-      webpackBundlingMode := BundlingMode.Application,
+      webpackBundlingMode := BundlingMode.LibraryAndApplication(),
       libraryDependencies ++= Seq("org.scala-js" %%% "scalajs-dom" % "1.1.0"),
       Compile / npmDependencies ++= Seq("blockly" -> "5.20210325.1")
     )
