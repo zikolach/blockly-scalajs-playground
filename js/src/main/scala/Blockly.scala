@@ -3,6 +3,7 @@ import scala.scalajs.js.annotation.{JSBracketAccess, JSImport, JSName}
 import scala.scalajs.js.|
 
 
+//noinspection ScalaUnusedSymbol
 @JSImport("blockly", JSImport.Default)
 @js.native
 object Blockly extends js.Object {
