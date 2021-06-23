@@ -5,8 +5,11 @@
     <title>The Scala.js Tutorial</title>
 </head>
 <body>
-<div id="blocklyContainer" style="width: 800px; height: 600px; background-color: gray;"></div>
-<button onclick="Foo.onClick()">Code</button>
+<div id="blocklyContainer" style="width: 800px; height: 600px; background-color: gray; border: 1px solid grey;"></div>
+<button style="font-size: larger; padding: 0.5rem 2rem; margin: 1rem 0;" onclick="Foo.onClick()">Generate code</button>
+<div>
+    <textarea id="code" rows="10" style="width: 100%;"></textarea>
+</div>
 <!-- Include Scala.js compiled code -->
 <script type="text/javascript" src="./js/target/scala-2.13/scalajs-bundler/main/blockly-playground-fastopt-bundle.js"></script>
 </body>
